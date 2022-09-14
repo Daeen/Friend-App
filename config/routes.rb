@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :friendships
+  resources :stories
   #devise_for :users
   devise_for :users do
   get '/users/sign_out' => 'devise/sessions#destroy'
